@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1220px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.header {
+}
+
+.header__inner {
+}
+.logo {
+}
+.logo__img {
+}
+.menu {
+}
+.menu__item {
+}
+.menu__link {
+}
