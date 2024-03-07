@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -67,7 +71,7 @@ body {
 } /*чтобы при наведении менялся цвет*/
 
 .bike {
-  padding: 100px 0 150px;
+  padding: 100px 0 0;
 }
 .bike__inner {
   display: flex;
@@ -107,6 +111,11 @@ body {
   font-size: 20px;
   letter-spacing: 1.1em;
   line-height: 24px;
+  transition: all 0.3s;
+}
+
+.bike__link:hover {
+  background-color: #ff4040;
 }
 
 .bike-slider .slick-dots {
@@ -165,7 +174,8 @@ body {
 }
 
 .info {
-  margin-bottom: 150px;
+  padding-top: 150px;
+  margin-bottom: 50px;
 }
 
 .info__inner {
@@ -198,6 +208,7 @@ body {
 }
 
 .characteristics {
+  padding-top: 100px;
   margin-bottom: 150px;
 }
 
@@ -387,4 +398,50 @@ body {
   font-size: 20px;
   line-height: 24px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form__btn:hover {
+  background-color: #ff4040;
+}
+
+.footer {
+  background-color: #131313;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.footen__link {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer__social-link + .footer__social-link {
+  margin-inline-start: 26px;
+}
+
+.footer__contacts {
+  color: #fff;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer__contacts-link {
+  display: flex;
+  align-items: center;
+}
+
+.footer__contacts-link + .footer__contacts-link {
+  margin-block-start: 10px;
+}
+
+.footer__contacts-img {
+  margin-inline-end: 10px;
 }
